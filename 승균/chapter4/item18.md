@@ -42,8 +42,7 @@ public class InstrumentedHashSet<E> extends HashSet<E> {
 3개의 원소를 addAll메서드로 더했다고 가정 하였다. 
 s.addAll(List.of("틱", "탁탁", "펑"));
 
-3을 반환 기대 but 6 반환 -> why? HashSet의 addAll 메서드가 add 사용하여 구현한 문제가 있음. 
-
+3을 반환 기대 but 6 반환 -> why? HashSet의 addAll 메서드가 add 사용하여 구현한 문제가 있음.
 
 이러한 문제점을 상속 대신 컴포지션을 사용하여 해결 할 수 있음. 
 
